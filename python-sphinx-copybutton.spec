@@ -21,12 +21,6 @@ Sphinx-copybutton does one thing: add a little "copy" button to the
 right of your code blocks.  If the code block overlaps to the right of
 the text area, you can just click the button to get the whole thing.
 
-%package        doc
-Summary:        Documentation for %{srcname}
-
-%description    doc
-Documentation for %{srcname}.
-
 %prep
 %autosetup -n %{srcname}-%{version}
 
@@ -36,10 +30,6 @@ rm -rf sphinx_copybutton.egg-info
 %build
 %py_build
 
-# Build the documentation
-PYTHONPATH=$PWD make -C doc html
-rm doc/_build/html/.buildinfo
-
 %install
 %py_install
 
@@ -48,6 +38,3 @@ rm doc/_build/html/.buildinfo
 %license LICENSE
 %{python_sitelib}/sphinx_copybutton*
 
-%files doc
-%doc doc/_build/html
-%license LICENSE
