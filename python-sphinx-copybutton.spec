@@ -1,13 +1,14 @@
 %global srcname sphinx-copybutton
 
 Name:           python-%{srcname}
-Version:        0.4.0
-Release:        3
+Version:        0.5.2
+Release:        1
 Summary:        Add a copy button to code cells in Sphinx docs
 Group:          Development/Python
 License:        MIT
 URL:            https://sphinx-copybutton.readthedocs.io/en/latest/
-Source0:        https://files.pythonhosted.org/packages/source/sphinx-copybutton/sphinx-copybutton-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/fc/2b/a964715e7f5295f77509e59309959f4125122d648f86b4fe7d70ca1d882c/sphinx-copybutton-%{version}.tar.gz
+#Source0:        https://files.pythonhosted.org/packages/source/sphinx-copybutton/sphinx-copybutton-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  make
